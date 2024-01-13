@@ -41,7 +41,7 @@ const Work = () => {
         <div className={`text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0`}>
         <h2 className={`h2 xl:mt-8`}> My Works <span className={`text-accent`}>.</span> </h2>
           <p className={`mb-4 max-w-[400px] mx-auto lg:mx-0`}>
-            I've honed my skills in fullstack web and mobile development, 
+            I have honed my skills in fullstack web and mobile development, 
           embracing the challenge of crafting seamless digital experiences. 
          </p>
 

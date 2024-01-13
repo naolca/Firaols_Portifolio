@@ -31,40 +31,26 @@ const aboutData = [
       {
         title: 'Frontend Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaAngular />,
-          
-        
+          <FaHtml5 key={1} />,
+          <FaCss3 key={1} />,
+          <FaJs key={1} />,
+          <FaReact key={1} />,
+          <SiNextdotjs key={1} />,
+          <SiFramer key={1} />,
+          <FaAngular key={1} />,
         ],
       },
       {
         title: 'Backend development',
-        icons: [<SiNestjs />,<SiExpress />, ],
+        icons: [<SiNestjs key={1} />,<SiExpress key={1} />, ],
       },
       {
         title: 'Mobile Development',
-        icons: [<SiFlutter />],
+        icons: [<SiFlutter key={1} />],
       },
     ],
   },
-  // {
-  //   title: 'awards',
-  //   info: [
-  //     {
-  //       title: 'Webby Awards - Honoree',
-  //       stage: '2011 - 2012',
-  //     },
-  //     {
-  //       title: 'Adobe Design Achievement Awards - Finalist',
-  //       stage: '2009 - 2010',
-  //     },
-  //   ],
-  // },
+  
   {
     title: 'experience',
     info: [
@@ -198,7 +184,7 @@ const About = () => {
                 {/* icons */}
                 <div className={`flex gap-x-4`}>
                     {item.icons && item.icons.map((icon, iconIndex) => {
-                      return <div className={`text-2xl text-white`}>
+                      return <div key={iconIndex} className={`text-2xl text-white`}>
                         {icon}
                         </div>
                     }
