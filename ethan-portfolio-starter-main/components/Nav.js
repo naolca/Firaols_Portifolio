@@ -39,7 +39,22 @@ const Nav = () => {
       {
         navData.map((item, index) => {
           return <Link key={index} href={item.path}>
-            <Link className={`${item.path === pathName && 'text-accent'}`} href={item.path}>
+            <Link
+                className={`${item.path === pathName && 'text-accent'} relative flex items-center group hover:text-accent`}
+                href={item.path}
+                key = {index}
+            >
+              {/*tool tip */}
+              <div className={`absolute pr-14 right-0 hidden xl:group-hover:flex `}>
+                <div className={`bg-white relative flex text-primary items-center  p-[6px] rounded-[3px]`}>
+              <div className={`text-[20px] leading-none font-semibold capitalize`}> { item.name } </div>
+                  <div className={ ` border-solid border-l-white border-l-8 
+                  border-y-transparent border-y-[6px] border-r-0 absolute -right-2  ` }></div>
+
+                </div>
+
+              </div>
+
               <div>
               {item.icon}
 
